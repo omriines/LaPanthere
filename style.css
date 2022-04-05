@@ -39,7 +39,7 @@ a:hover {
     position: relative;
 }
 
-.bloc .container {
+.bloc .container  {
     padding-left: 0;
     padding-right: 0;
 }
@@ -775,12 +775,14 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+   /* color: #F3976C!important;*/
+    color: #FADFD6!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+     background: #F3976C;
+    /*background:#E27903;*/
+    color: #854868!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -1040,3 +1042,21 @@ h4 {
         text-align: center;
     }
 }
+/*centrer les images*/
+.center-img{
+    margin-left: auto;
+    margin-right: auto; 
+}
+/*centrer les images*/
+
+/*Footer*/
+.list{
+    text-align: center;
+    padding-top:5%;
+}
+.list-f ul{
+    text-decoration: none;
+    list-style-type: none;
+    padding-left:0px;
+}
+/*Footer*/
