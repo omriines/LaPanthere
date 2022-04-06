@@ -782,7 +782,7 @@ h4 {
 .btn-atomic-tangerine {
      background: #F3976C;
     /*background:#E27903;*/
-    color: #1F1F1F!important;
+    color: #1A1A1A!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -1060,3 +1060,6 @@ h4 {
     padding-left:0px;
 }
 /*Footer*/
+.text-center{
+    color:#1A1A1A;
+}
