@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    /* background: url("img/texture-paper.png"); */
+    background: url("img/texture-paper.png"); 
     background-size: 280px 280px;
 }
 
@@ -740,6 +740,9 @@ h4 {
 }
 .black{
     color:#1A1A1A !important;
+}
+.tc-black{
+    color:#575757 !important;
 }
 
 .portfolio-thumb {
