@@ -335,6 +335,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    border:1px solid blue;
 }
 
 .navbar-toggle {
@@ -458,6 +459,15 @@ nav .caret {
 .btn-d:focus {
     color: #FFF;
     background: rgba(0, 0, 0, .3);
+}
+input:focus{
+    border:2px solid blue;
+}
+a:focus{
+    border:2px solid blue;
+}
+button:focus{
+    border:2px solid blue;  
 }
 
 button {
