@@ -335,9 +335,11 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
-    border:1px solid blue;
+    border:3px solid #1A1A1A;
 }
-
+a:focus img{
+    border:3px solid #1A1A1A;
+}
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
@@ -460,15 +462,13 @@ nav .caret {
     color: #FFF;
     background: rgba(0, 0, 0, .3);
 }
-input:focus{
+/* input:focus{
+    border:2px solid #1A1A1A;
+} */
+/* a:focus{
     border:2px solid blue;
-}
-a:focus{
-    border:2px solid blue;
-}
-button:focus{
-    border:2px solid blue;  
-}
+} */
+
 
 button {
     outline: none!important;
@@ -526,7 +526,6 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -801,9 +800,18 @@ h4 {
     color: #1A1A1A!important;
 }
 
-.btn-atomic-tangerine:hover {
+/* .btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
+} */
+.btn-atomic-tangerine:focus,.btn-atomic-tangerine:hover  {
+    border:2px solid #1A1A1A!important;
+    color: #1A1A1A!important;
+}
+.social:focus .icon-md{
+  
+    color:#1A1A1A;
+
 }
 
 .ltc-white {
