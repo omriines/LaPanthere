@@ -533,7 +533,9 @@ button {
 .scrollToTop span {
     margin-top: 6px;
 }
-
+.scrollToTop:focus{
+    border:2px solid #1A1A1A!important;
+}
 .showScrollTop {
     font-size: 14px;
     opacity: 1;
