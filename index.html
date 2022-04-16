@@ -7,21 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/webp" href="favicon.jpg">
 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<!-- <link rel="preload" href="./css/bootstrap.css" as="bootstrap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./css/bootstrap.css"></noscript> -->
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript> -->
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrapmin.css">
+	<link rel="stylesheet" type="text/css" href="stylemin.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesomemin.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-linemin.css">
 	
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+	<script defer src="./js/jquery-2.1.0min.js"></script>
+	<script defer src="./js/bootstrapmin.js"></script>
+	<script defer src="./js/blocsmin.js"></script>
+	<script defer src="./js/jquery.touchSwipemin.js"></script>
+	<script defer src="./js/gmapsmin.js"></script>
 
     <title>Agence la panthère Notre Meilleur Entreprise webdesign Lyon</title>
 
@@ -40,7 +36,7 @@
 
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="#">
 					<img src="img/agence-la-panthere-monochrome.svg" alt="Logo agence web meilleure agence web design à Lyon" height="40" title="Retour à la page Accueil"/></a>
 			
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
@@ -89,7 +85,7 @@
 	<div class="container bloc-md">
 		<div class="row">
 			<h2 class="mg-md text-center">
-				L'agence La Panthère est une agence de web design qui aide les entresprises à devenir attractives et visibles sur internet.</p>
+				L'agence La Panthère est une agence de web design qui aide les entresprises à devenir attractives et visibles sur internet.
 
 			</h2>
 		</div>
@@ -131,7 +127,7 @@
 		<div class="row voffset-lg voffset">
 			
 			<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-				<h2>"L'agence La Panthère est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrér à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."</p>
+				<h2>"L'agence La Panthère est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrér à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."
 				</h2>				
 				<h3>Maxime Guibard, PDG de A vos fourchettes</h3>
 			</div>
@@ -214,10 +210,10 @@
 <!-- bloc-4-portfolio END -->
 
 <!-- bloc-5-cta -->
-<div class="bloc  bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
+<div class="bloc  bg-banniere d-bloc bloc-bg-texture" id="bloc-5-cta">
 	<div class="container bloc-lg">
 		<div class="row">
-			<h2 class="mg-md text-center white">
+			<h2 class="mg-md text-center black">
 				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 			</h2>
 			<div class="col-sm-12 text-center">
@@ -228,6 +224,11 @@
 </div>
 <!-- bloc-5-cta END -->
 
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')">
+	<span class="fa fa-chevron-up"></span>
+</a>
+<!-- ScrollToTop Button END-->
 <!-- Footer - bloc-8 -->
 <footer>
 <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
@@ -235,27 +236,28 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<h3 class="text-center black">
-					Agence La Panthère - Agence web basée à Lyon.<br>
+					Agence La Panthère - Agence web basée à Lyon.<br><br>
 				</h3>
+				<h4 class="text-center black">Retrouvez-nous sur</h4><br>
 				<div class="row row-no-gutters social">
 					<div class="col-xs-3">
 						<div class="text-center">
-							<a class="social" aria-label="Lien vers twitter" href="https://twitter.com/?lang=fr"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" aria-label="Lien vers twitter" href="https://twitter.com/?lang=fr"><span class="fa fa-twitter icon-md"><p>Lien vers twitter</p></span></a>
 						</div>
 					</div>
 					<div class="col-xs-3">
 						<div class="text-center">
-							<a class="social" aria-label="Lien vers facebook" href="https://www.facebook.com/"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social"  aria-label="Lien vers facebook" href="https://www.facebook.com/"><span class="fa fa-facebook icon-md"><p>Lien vers facebook</p></span></a>
 						</div>
 					</div>
 					<div class="col-xs-3">
 						<div class="text-center">
-							<a class="social"  aria-label="Lien vers dribbble" href="https://dribbble.com/"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social"  aria-label="Lien vers dribbble" href="https://dribbble.com/"><span class="fa fa-dribbble icon-md"><p>Lien vers dribbble</p></span></a>
 						</div>
 					</div>
 					<div class="col-xs-3">
 						<div class="text-center">
-							<a class="social" aria-label="Lien vers instagram" href="https://www.instagram.com/?hl=fr"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" aria-label="Lien vers instagram" href="https://www.instagram.com/?hl=fr"><span class="fa fa-instagram icon-md"><p>Lien vers instagram</p></span></a>
 						</div>
 					</div>
 							</div>

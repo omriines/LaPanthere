@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    /* background: url("img/texture-paper.png"); */
+    background: url("img/texture-paper.webp"); 
     background-size: 280px 280px;
 }
 
@@ -335,8 +335,11 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    border:3px solid #000082;
 }
-
+a:focus img{
+    border:3px solid #000082;
+}
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
@@ -457,8 +460,15 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0,0,0,.3);
 }
+/* input:focus{
+    border:2px solid #1A1A1A;
+} */
+/* a:focus{
+    border:2px solid blue;
+} */
+
 
 button {
     outline: none!important;
@@ -516,7 +526,6 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -524,7 +533,9 @@ button {
 .scrollToTop span {
     margin-top: 6px;
 }
-
+.scrollToTop:focus{
+    border:2px solid #000082!important;
+}
 .showScrollTop {
     font-size: 14px;
     opacity: 1;
@@ -677,7 +688,7 @@ a {
 }
 
 p {
-    font-size: 15px;
+    c
 }
 
 .tight-width-whitespace {
@@ -703,7 +714,10 @@ p {
     max-width: 400px;
     margin: auto auto auto auto;
 }
-
+.social p {
+    color: #1a1a1a !important;;
+   font-size: 11px;
+}
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -740,6 +754,9 @@ h4 {
 }
 .black{
     color:#1A1A1A !important;
+}
+.tc-black{
+    color:#575757 !important;
 }
 
 .portfolio-thumb {
@@ -788,9 +805,18 @@ h4 {
     color: #1A1A1A!important;
 }
 
-.btn-atomic-tangerine:hover {
+/* .btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
+} */
+.btn-atomic-tangerine:focus,.btn-atomic-tangerine:hover  {
+    border:2px solid #000082!important;
+    color: #000082!important;
+}
+.social:focus .icon-md{
+  
+    color:#000082;
+
 }
 
 .ltc-white {
@@ -853,13 +879,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -877,10 +903,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+ 
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -889,8 +912,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
